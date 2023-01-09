@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid black;
+            transform: scale(2);
+            margin: auto;
+            margin-top: 200px;
+        }
+        td{
+           border : 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is Heading</h1>
+    <table>
+        <tr  id="r1">
+            <td>col1</td>
+            <td>col2</td>
+            <td>col3</td>
+        </tr>
+        <tr id="r2">
+          <td>dus</td>
+          <td>aman</td>
+          <td>sham</td>
+        </tr>
+        <tr id="r3">
+            <td>dus</td>
+            <td>aman</td>
+            <td>sham</td>
+        </tr>
+    </table>
+
+</body>
+<script>
+    document.getElementById("r1").addEventListener("click", sample);
+    function sample(){
+        
+        document.getElementById("r1").style.fontSize = "40px";
+        document.getElementById("r1").style.backgroundColor ="red";
+    }
+    document.getElementById("r2").addEventListener("click", sample1);
+    function sample1(){
+        document.getElementById("r2").style.fontSize = "40px";
+        document.getElementById("r2").style.backgroundColor ="pink";
+    }
+    document.getElementById("r3").addEventListener("click", sample2);
+    function sample2(){
+        document.getElementById("r3").style.fontSize = "40px";
+        document.getElementById("r3").style.backgroundColor ="green";
+    }
+
+</script>
+</html>
